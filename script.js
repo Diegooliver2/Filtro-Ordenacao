@@ -71,10 +71,12 @@ function ordenacao(n1, n2, tag, elemF) {
 }
 
 function ordEst(f1, f2, pai, avo){
+    ordenacao(f2, f1, pai, avo)
     return ordenacao(f1, f2, pai, avo)
 }
 
 function ordNiv(f1, f2, pai, avo){
+    ordenacao(f1, f2, pai, avo)
     return ordenacao(f2, f1, pai, avo)
 }
 
